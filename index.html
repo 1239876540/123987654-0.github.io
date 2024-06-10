@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+    <head>
+        <link href="text.css" rel="stylesheet">
+        <meta name ="viewport" content="initial-scale=1, width=device-width">
+        <title>
+            张万辰
+        </title>
+    </head>
+    <body class="center">
+        <button id="red">红色</button>
+        <button id="green">绿色</button>
+        <button id="blue">蓝色</button>
+        <button id="white">白色</button>
+        <form action="https://i.baihe.com/n/search" method="get">
+            <input name="q"  autofocus placeholder="张万辰" type="search">
+            <button>搜索</button>
+        </form>
+        <img src="2.jpg" width="600" height="800">
+        <header class="large blink">
+            征婚
+        </header>
+        <main class="medium">
+            <div>
+                姓名：<a href="https://www.douyin.com/user/MS4wLjABAAAAH639j6g87VNhxo8B5YWA24c1vsq53-w-vnlDEAebfx8?modal_id=7155839114510716200">张万辰</a>
+            </div>
+            <div>
+                性别：男
+            </div>
+            <div>
+                年龄：19
+            </div>
+            <div>
+                住址：安徽省滁州市发能凤凰城
+            </div>
+            <div>
+                征婚宣言 ：滁州有房， 缺个男房东
+            </div>
+        </main>
+        <fonter class="small">
+            版权所有 &#169; 张万辰
+        </fonter>
+    </body>
+    <script>
+        let blinkElement = document.querySelector('.blink');
+            let blinkInterval = setInterval(function() {
+            if (blinkElement.style.visibility === 'hidden') {
+                blinkElement.style.visibility = 'visible';
+            } else {
+                blinkElement.style.visibility = 'hidden';
+            }
+            }, 250);
+            let body = document.querySelector('body');
+            document.querySelector('#red').addEventListener('click', function() {
+                body.style.backgroundColor = 'red';
+            });
+            document.querySelector('#green').addEventListener('click', function() {
+                body.style.backgroundColor = 'green';
+            });
+            document.querySelector('#blue').addEventListener('click', function() {
+                body.style.backgroundColor = 'blue';
+            });
+            document.querySelector('#white').addEventListener('click', function() {
+                body.style.backgroundColor = 'white';
+            });
+    </script>
+</html>
